@@ -3,7 +3,7 @@ from flask import Flask, request, render_template_string
 
 app = Flask(__name__)
 
-# 1. HARDCODED SECRET VULNERABILITY
+# 1. HARDCODED SECRET VULNERABILITY1
 # CodeQL / Secret Scanning will flag this as an exposed credential risk.
 API_SECRET_KEY = "xoxb-123456789012-345678901234-vulnerablesecretkeyabc123"
 
