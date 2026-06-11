@@ -8,5 +8,5 @@ def search_user(username):
   results = cursor.fetchall()
   conn.close()
   return results
-user_input = input("Enter username: ")
+user_input = input("Enter username.: ")
 print(search_user(user_input))
