@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # 1. HARDCODED SECRET VULNERABILITY1
 # CodeQL / Secret Scanning will flag this as an exposed credential risk.
-API_SECRET_KEY = "xoxb-123456789012-345678901234-vulnerablesecretkeyabc123"
+API_SECRET_KEY = ${{secrets.API_SECRET_KEY}}
 
 @app.route("/profile")
 def user_profile():
